@@ -6,7 +6,12 @@ public class Main {
 
         int[] A = {2,1,5,3,4};
 
-        Sorting sorting = new BubbleSort();
+        /**
+         * Uncomment the desired sort
+         */
+
+       // Sorting sorting = new BubbleSort();
+        Sorting sorting = new SelectionSort();
 
         System.out.println("Before Sorting");
 
