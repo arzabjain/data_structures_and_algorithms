@@ -13,7 +13,8 @@ public class Main {
        // Sorting sorting = new BubbleSort();
 //        Sorting sorting = new SelectionSort();
 //          Sorting sorting = new InsertionSort();
-          Sorting sorting = new MergeSort();
+//          Sorting sorting = new MergeSort();
+            Sorting sorting = new QuickSort();
 
         System.out.println("Before Sorting");
 
