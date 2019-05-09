@@ -1,14 +1,14 @@
 package com.stack;
 
-public interface Stack<AnyType> {
+public interface Stack<T> {
 
     public boolean isEmpty();
 
-    public AnyType peek();
+    public T peek();
 
-    public AnyType pop();
+    public T pop();
 
-    public void push(AnyType e);
+    public void push(T e);
 
     public void clear();
 

@@ -16,14 +16,8 @@ public class Main {
         linkedList.set( 19, 4);
         linkedList.traverse();
 
-        System.out.println("\n count " + linkedList.size());
+        linkedList.reverse();
 
-        System.out.println("find "+ linkedList.find(50));
-
-        System.out.println("After remove All");
-
-        linkedList.removeAll();
-
-        System.out.println("\n count " + linkedList.size());
+        linkedList.traverse();
     }
 }

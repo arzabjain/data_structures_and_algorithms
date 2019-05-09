@@ -3,10 +3,10 @@ package com.stack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayStack<AnyType> implements Stack<AnyType>{
+public class ArrayStack<T> implements Stack<T>{
 
 
-    private List<AnyType> stack = new ArrayList<>();
+    private List<T> stack = new ArrayList<>();
 
     @Override
     public boolean isEmpty() {
@@ -14,7 +14,7 @@ public class ArrayStack<AnyType> implements Stack<AnyType>{
     }
 
     @Override
-    public AnyType peek() {
+    public T peek() {
 
         if (stack.isEmpty()){
             return null;
@@ -25,17 +25,17 @@ public class ArrayStack<AnyType> implements Stack<AnyType>{
     }
 
     @Override
-    public AnyType pop() {
+    public T pop() {
 
         if (!stack.isEmpty())
             return stack.remove(stack.size() - 1);
         else {
-            return (AnyType) new IndexOutOfBoundsException();
+            return (T) new IndexOutOfBoundsException();
         }
     }
 
     @Override
-    public void push(AnyType e) {
+    public void push(T e) {
         stack.add(e);
     }
 
